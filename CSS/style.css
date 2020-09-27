@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+#google{
+    
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color:transparent; 
+    font-weight: bold;
+  
+    left: 50px;
+    font-size: 130px;
+
+    animation: letra_m 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    
+}
+
+
+
+@keyframes letra_m{
+    0% {transform: translateY(0);
+        color:transparent; 
+    }
+   
+
+    100% {
+        color: rgba(25, 35, 255, 0.5);
+    }
+}
+
+
+
+
+#square{
+    width: 80px;
+    height: 250px;
+    position: relative;
+   
+    margin: 25vh auto auto auto;
+ 
+   
+}
+
+
+.cylinder{
+    width: 80px;
+    height: 250px;
+  
+    border-radius: 180px;
+    display: flex;
+    
+}
+
+#c1{
+    background-color: #ffc400;
+    position: absolute;
+    transform-origin: 38% 15%;
+    
+    animation: green_anim 2s;
+    transform: rotateZ(35deg);
+   
+}
+
+
+#c2{
+    
+    background-color: #0d31d3;
+    transform-origin: 50% 20%;
+    animation: yellow_anim 2s;
+    transform: rotateZ(-35deg);
+   
+}
+
+
+@keyframes yellow_anim{
+    from{transform:rotateZ(0deg);}
+    to{transform: rotateZ(-35deg);}
+    
+}
+@keyframes green_anim{
+    from{transform:rotateZ(0deg);}
+    to{transform: rotateZ(35deg);}
+    
+}
+.bolinha{
+    
+    transition: 3s;
+    top: 15px;
+    background-color: rgb(38, 214, 25);
+    border-radius: 180px;
+    animation: ball_anim 2s linear;
+    transform-origin: 35% 85%;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    
+
+}
+
+
+@keyframes ball_anim{
+    0% {transform: translateY(0);
+        
+        width: 78px;
+        height: 78px;}
+    25% {transform: translateY(170px);}
+
+    50% {transform: translateY(130px);}
+
+
+    100% {transform: translateY(170px);
+        
+        width: 78px;
+        height: 78px;
+    }
+}
+
